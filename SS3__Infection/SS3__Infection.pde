@@ -7,7 +7,7 @@ boolean button = false;
 void setup(){
   size(950,950);
   background(190);
-  frameRate(10);
+  frameRate(30);
 }
 
 
