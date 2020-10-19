@@ -7,6 +7,7 @@ PImage ThumbsUpCat;
 PImage happyCat;
 PImage arrow;
 
+String state = "pregame";
 
 void setup(){
   size(1000,1000);
@@ -31,6 +32,13 @@ void setup(){
 
 void draw(){
 println (mouseX +"," + mouseY);
+  //if (state == "pregame"){
+  // pregame(); 
+  //}else if (state == "start"){
+  // game(); 
+  //}else if(state == "game over"){
+  //  state = "pregame";
+  //}
 }
 
 
