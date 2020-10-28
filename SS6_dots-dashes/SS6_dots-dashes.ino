@@ -2,6 +2,9 @@
 
 int buttonPin = 2;
 int LED1 = 12;
+int LED2 = 9;
+int LED3 = 10;
+int LED4 = 11;
 
 int buttonState = 2;
 
@@ -18,6 +21,34 @@ void loop() {
 
 buttonState = digitalRead(buttonPin);
 delay(10);
+
+//-----------------------
+//3 blue LEDS
+
+digitalWrite(LED2, HIGH);
+delay(100);
+digitalWrite(LED2, LOW);
+delay(100);
+
+digitalWrite(LED3, HIGH);
+delay(100);
+digitalWrite(LED3, LOW);
+delay(100);
+
+digitalWrite(LED4, HIGH);
+delay(100);
+digitalWrite(LED4, LOW);
+delay(100);
+
+digitalWrite(LED2, HIGH);
+digitalWrite(LED3, HIGH);
+digitalWrite(LED4, HIGH);
+delay(300);
+digitalWrite(LED2, LOW);
+digitalWrite(LED3, LOW);
+digitalWrite(LED4, LOW);
+
+//-----------------------
 
 if(buttonState == HIGH){
   //dot
