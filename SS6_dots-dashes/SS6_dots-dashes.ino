@@ -1,12 +1,12 @@
 //isaias acosta, SS6 dots and dashes
 
-int buttonPin = 2;
-int LED1 = 12;
-int LED2 = 9;
-int LED3 = 10;
-int LED4 = 11;
+int buttonPin = 12;
+int LED1 = 2;
+int LED2 = 3;
+int LED3 = 4;
+int LED4 = 5;
 
-int buttonState = 2;
+int buttonState = 12;
 
 void setup() {
 pinMode(LED1,OUTPUT);
