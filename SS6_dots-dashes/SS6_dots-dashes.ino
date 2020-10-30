@@ -1,10 +1,18 @@
 //isaias acosta, SS6 dots and dashes
 
+<<<<<<< HEAD
 int buttonPin = 12;
 int LED1 = 6;
 int LED2 = 3;
 int LED3 = 4;
 int LED4 = 5;
+=======
+int buttonPin = 2;
+int LED1 = 12;
+int LED2 = 9;
+int LED3 = 10;
+int LED4 = 11;
+>>>>>>> master
 
 int buttonState = 12;
 
@@ -26,6 +34,7 @@ delay(10);
 //3 blue LEDS
 
 digitalWrite(LED2, HIGH);
+<<<<<<< HEAD
 delay(200);
 digitalWrite(LED2, LOW);
 delay(200);
@@ -39,6 +48,21 @@ digitalWrite(LED4, HIGH);
 delay(200);
 digitalWrite(LED4, LOW);
 delay(200);
+=======
+delay(100);
+digitalWrite(LED2, LOW);
+delay(100);
+
+digitalWrite(LED3, HIGH);
+delay(100);
+digitalWrite(LED3, LOW);
+delay(100);
+
+digitalWrite(LED4, HIGH);
+delay(100);
+digitalWrite(LED4, LOW);
+delay(100);
+>>>>>>> master
 
 digitalWrite(LED2, HIGH);
 digitalWrite(LED3, HIGH);
