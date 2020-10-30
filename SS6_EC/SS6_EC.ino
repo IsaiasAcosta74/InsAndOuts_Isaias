@@ -39,7 +39,7 @@ void loop() {
 
 void RedLED(){
   int index;
-  int delayTime = 100;
+  int delayTime = 300;
   for(index = 3; index >=0; index--)
   {
     digitalWrite(ledRed[index],HIGH);
@@ -54,15 +54,24 @@ void RedLED(){
 
 void BlueLED(){
 int index;
-int delayTime = 100;
+int delayTime = 300;
     for(index = 0; index <=3; index++)
   {
-    digitalWrite(ledBlue[index],HIGH);
+    digitalWrite(ledBlue[0],HIGH);
     delay(delayTime);
-    digitalWrite(ledBlue[index],LOW);
+    digitalWrite(ledBlue[0],LOW);
     delay(delayTime);
-    digitalWrite(ledBlue[index],HIGH);
+    digitalWrite(ledBlue[0],HIGH);
     delay(delayTime);
-    digitalWrite(ledBlue[index],LOW);
+    digitalWrite(ledBlue[0],LOW);
+    delay(delayTime);
+    digitalWrite(ledBlue[3],HIGH);
+    delay(delayTime);
+    digitalWrite(ledBlue[3],LOW);
+    delay(delayTime);
+    digitalWrite(ledBlue[2],HIGH);
+    delay(delayTime);
+    digitalWrite(ledBlue[2],LOW);
+    delay(delayTime);
   }
 }
