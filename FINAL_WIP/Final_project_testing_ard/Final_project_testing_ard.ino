@@ -6,7 +6,9 @@ const int LED1 = 7;
 
 int buttonPin = 8;
 int buttonState = 8;
-int val = 2;
+int val = 0;
+int val_X = 0;
+int val_Y = 0;
 
 
 
@@ -14,15 +16,25 @@ void setup()
 {
   pinMode(buttonPin,INPUT);
   pinMode(LED1,OUTPUT);
+  
   pinMode(SW_pin, INPUT);
+  pinMode(X_pin, INPUT);
+  pinMode(Y_pin, INPUT);
   digitalWrite(SW_pin, HIGH);
-  Serial.begin(9600);
+  Serial.begin(115200);
 
 }
 
 void loop() 
 {
   val = digitalRead(SW_pin);
+  
+  val_X = analogRead(X_pin);
+  val_X = val_X;
+  
+  val_Y = analogRead(Y_pin);
+  val_Y = val_Y;
+  
   Serial.print("Switch:  ");
   Serial.print(digitalRead(SW_pin));
   Serial.print("\n");
@@ -32,7 +44,7 @@ void loop()
   Serial.print("Y-axis:  ");
   Serial.print(analogRead(Y_pin));
   Serial.print("\n\n");
-  delay(500);
+  //delay(500);
 
   buttonState = digitalRead(buttonPin);
   delay(10);
@@ -44,5 +56,7 @@ void loop()
     digitalWrite(LED1,HIGH);
   }
   
-  Serial.write(val);
+  //Serial.write(val);
+  Serial.write(val_X);
+  Serial.write(val_Y);
 }
